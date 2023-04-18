@@ -1,0 +1,150 @@
+.bandeau {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 350px;
+  background-color: #558ba3;
+}
+
+.reference {
+  margin-left: 100px;
+  /* Ajoutez ici d'autres propriétés pour le style de votre div de référence */
+}
+
+h1 {
+  color: white;
+}
+
+.petit-bandeau {
+  height: 90px;
+  width: 100%;
+  margin-top: 50px;
+  background-color: #52a1bb;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav ul li:hover > a {
+  background-color: #f2f2f2;
+}
+
+nav ul li.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.dropdown-menu li {
+  display: block;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.dropdown-menu li:hover > a {
+  background-color: #f2f2f2;
+}
+
+.container2 {
+  margin: 50px auto;
+  padding: 10px;
+  margin-left: 340px;
+  background-color: #e6f2ff;
+}
+
+.center {
+  text-align: center;
+  color: #2A5E74;
+}
+
+.container3 {
+  margin : 20px;
+  padding: 5px;
+  margin-left: 360px;
+  cursor: pointer; /* rendre le conteneur clickable */
+  border: 1px solid #ccc; /* ajouter une bordure */
+  padding: 10px; /* ajouter de la marge intérieure */
+  display: inline-block; /* afficher en ligne */
+}
+
+.container4 {
+  margin : 20px;
+  padding: 10px;
+  cursor: pointer; /* rendre le conteneur clickable */
+  border: 1px solid #ccc; /* ajouter une bordure */
+  padding: 10px; /* ajouter de la marge intérieure */
+  display: inline-block; /* afficher en ligne */
+}
+
+.container_filter {
+  margin-top:0;
+  display: inline-block; /* afficher en ligne */
+}
+
+#filter-options {
+  display:none;
+}
+
+.container_arbre1 {
+  border: 2px solid black;
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.checkboxes {
+  margin-bottom: 20px;
+}
+
+label {
+  margin-left: 5px;
+}
+
+.next-btn {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+
+
+
