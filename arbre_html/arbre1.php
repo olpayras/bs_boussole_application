@@ -1,3 +1,6 @@
+<?php
+include "../html/header.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,39 +9,6 @@
 </head>
 
 <body>
-	<div class="bandeau">
-		<div class="petit-bandeau">
-			<h1>Bon sauveur d'Alby</h1>
-		</div>
-		<div class="reference">
-			<br><input type="text">
-			<nav>
-				<ul>
-					<li class="dropdown">
-						<a href="#">Services &#9662;</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Psychiatrie</a></li>
-							<li><a href="#">Handicap</a></li>
-							<li><a href="#">Autisme</a></li>
-							<li><a href="#">Addiction</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-			<br><br><br>
-			<nav>
-				<ul>
-					<li class="dropdown">
-						<a href="#">Catégories &#9662;</a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Sanitaire</a></li>
-							<li><a href="#">Médico-Social</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</div>
-	</div>
 	<div class="container2">
 		<h1 class="center">Bienvenue dans votre boîte à outils</h1>
 		<h2 class="center">Intranet de la Fondation Bon Sauveur D'Alby</h2>
