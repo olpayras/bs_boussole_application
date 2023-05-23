@@ -10,16 +10,25 @@
         <img class="petit-bandeau-logo" src="../images/logo.png">
     </div>
     <div class="reference">
-        <br><input type="search" class="recherche" placeholder="Recherche Application">
+        <br>
+        <form action="../functions/rechercher.php" method="GET">
+            <input type="search" name="nom" class="recherche" placeholder="Recherche Application">
+            <input type="submit" value="Rechercher">
+        </form>
+    </br>
         <nav class="nav">
             <ul>
                 <li class="dropdown">
                     <a href="#">Services &#9662;</a>
                     <ul class="dropdown-menu">
-                        <li class="dropdown-compo"><a style="color: black" href="#">Psychiatrie</a></li>
-                        <li class="dropdown-compo"><a style="color: black" href="#">Handicap</a></li>
-                        <li class="dropdown-compo"><a style="color: black" href="#">Autisme</a></li>
-                        <li class="dropdown-compo"><a style="color: black" href="#">Addiction</a></li>
+                        <li class="dropdown-compo"><a style="color: black"
+                        href="../functions/souspage_service.php?service=Psychiatrie">Psychiatrie</a></li>
+                        <li class="dropdown-compo"><a style="color: black"
+                        href="../functions/souspage_service.php?service=Handicap">Handicap</a></li>
+                        <li class="dropdown-compo"><a style="color: black"
+                        href="../functions/souspage_service.php?service=Autisme">Autisme</a></li>
+                        <li class="dropdown-compo"><a style="color: black"
+                        href="../functions/souspage_service.php?service=Addiction">Addiction</a></li>
                     </ul>
                 </li>
             </ul>
@@ -30,8 +39,10 @@
                 <li class="dropdown">
                     <a href="#">Catégories &#9662;</a>
                     <ul class="dropdown-menu">
-                        <li class="dropdown-compo"><a style="color: black" href="#">Sanitaire</a></li>
-                        <li class="dropdown-compo"><a style="color: black" href="#">Médico-Social</a></li>
+                        <li class="dropdown-compo"><a style="color: black"
+                         href="../functions/souspage_categ.php?categ=Sanitaire">Sanitaire</a></li>
+                        <li class="dropdown-compo"><a style="color: black"
+                        href="../functions/souspage_categ.php?categ=Médico-Social">Médico-Social</a></li>
                     </ul>
                 </li>
             </ul>

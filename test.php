@@ -19,7 +19,7 @@
 
 	<?php
 		// Connexion à la base de données
-		$connexion = mysqli_connect("localhost", "root", "", "BONSAUVEUR");
+		$connexion = mysqli_connect("localhost", "root", "root", "BONSAUVEUR");
 
 		// Vérification de la connexion
 		if (!$connexion) {
