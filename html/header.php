@@ -7,7 +7,7 @@
 <body>
 <div class="bandeau">
     <div class="petit-bandeau">
-        <img class="petit-bandeau-logo" src="../images/logo.png">
+        <img class="petit-bandeau-logo" src="../images/logo_bs.png">
     </div>
     <div class="reference">
         <br>
