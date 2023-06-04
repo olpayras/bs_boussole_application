@@ -24,8 +24,9 @@ include "../html/header.php";
 
     // Affiche les informations détaillées
     $row = $result->fetch();
-    echo 'Nom : ' . $row['NOM'] . '<br>';
+    echo '<b>' . $row['NOM'] . '</b><br>';
     echo 'Description : ' . $row['DESCR'] . '<br>';
+    echo '<a href=' . $row['SOURC'] .'>Télécharger</a>';
     // Ajoutez d'autres champs à afficher selon votre structure de base de données
     ?></div>
 </body>

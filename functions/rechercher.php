@@ -26,7 +26,14 @@ $result = $bdd->query($query);
 echo '<div class="cont2">';
 while ($row = $result->fetch()) {
     echo '<div>';
-    echo '<a href="detail.php?id=' . $row['APPID'] . '">' . $row['NOM'] . '</a>';
+    echo '<a href="detail.php?id=' . $row['APPID'] . '"><b>' . $row['NOM'] . '</b></a>';
+    $description = $row['DESCR'];
+    $limit = 100; // Limite de caractères
+    if (strlen($description) > $limit) {
+        $description = substr($description, 0, $limit) . '...';
+    }
+    
+    echo '<p><b>Description : </b>' . $description . '</p>';
     echo '</div>';
     }
 echo '</div>';
