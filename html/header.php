@@ -7,7 +7,9 @@
 <body>
 <div class="bandeau">
     <div class="petit-bandeau">
-        <img class="petit-bandeau-logo" src="../images/logo_bs.png">
+        <a href="../html/index.php">
+            <img class="petit-bandeau-logo" src="../images/logo_bs.png">
+        </a>
     </div>
     <div class="reference">
         <br>
@@ -21,13 +23,13 @@
                 <li class="dropdown">
                     <a href="#">Services &#9662;</a>
                     <ul class="dropdown-menu">
-                        <li class="dropdown-compo"><a style="color: black"
+                        <li class="dropdown-compo"><a style="color: white"
                         href="../functions/souspage_service.php?service=Psychiatrie">Psychiatrie</a></li>
-                        <li class="dropdown-compo"><a style="color: black"
+                        <li class="dropdown-compo"><a style="color: white"
                         href="../functions/souspage_service.php?service=Handicap">Handicap</a></li>
-                        <li class="dropdown-compo"><a style="color: black"
+                        <li class="dropdown-compo"><a style="color: white"
                         href="../functions/souspage_service.php?service=Autisme">Autisme</a></li>
-                        <li class="dropdown-compo"><a style="color: black"
+                        <li class="dropdown-compo"><a style="color: white"
                         href="../functions/souspage_service.php?service=Addiction">Addiction</a></li>
                     </ul>
                 </li>
@@ -39,9 +41,9 @@
                 <li class="dropdown">
                     <a href="#">Catégories &#9662;</a>
                     <ul class="dropdown-menu">
-                        <li class="dropdown-compo"><a style="color: black"
+                        <li class="dropdown-compo"><a style="color: white"
                          href="../functions/souspage_categ.php?categ=Sanitaire">Sanitaire</a></li>
-                        <li class="dropdown-compo"><a style="color: black"
+                        <li class="dropdown-compo"><a style="color: white"
                         href="../functions/souspage_categ.php?categ=Médico-Social">Médico-Social</a></li>
                     </ul>
                 </li>

@@ -18,30 +18,31 @@ include "header.php"
 	<div class="container3" onclick="window.location.href='../arbre_html/arbre1.php'">
 		<img src="../images/boussole.png">
 	</div>
-	<div class="container4">
-		<img src="../images/example_start_page.png">
-	</div>
-	<div class="container_filter">
-		<div class="filter">
-			<button id="filter-button">Filtrer</button>
-			<div id="filter-options">
-			  <label><input type="checkbox" name="option1" value="option1">Patient</label>
-			  <label><input type="checkbox" name="option2" value="option2">Praticien</label>
-			  <label><input type="checkbox" name="option3" value="option3">...</label>
-			</div>
-		  </div>		  
-	</div>
-	<div class="container3">
-		<img src="../images/example_start_page2.png">
-	</div>
-	<div class="container4">
-		<img src="../images/example_start_page3.png">
-	</div>
-	<div class="container4">
-		<img src="../images/example_start_page4.png">
-	</div>
+	<div class="cont"><?php
 
-	<script src="../functions/main.js"></script>
+// Effectue la connexion à la base de données (vous devez configurer les paramètres de connexion appropriés)
+$bdd = new PDO('mysql:host=localhost;dbname=BONSAUVEUR', 'root', 'root');
+
+// Effectue la requête SQL pour récupérer les outils correspondants
+$query = "SELECT * FROM OUTILS LIMIT 3";
+$result = $bdd->query($query);
+$count = 0;
+
+echo '<div class="cont2">';
+  while ($row = $result->fetch()) {
+    echo '<div>';
+    echo '<a href="../functions/detail.php?id=' . $row['APPID'] . '"><b>' . $row['NOM'] . '</b></a>';
+    $description = $row['DESCR'];
+    $limit = 100; // Limite de caractères
+    if (strlen($description) > $limit) {
+      $description = substr($description, 0, $limit) . '...';
+    }
+    echo '<p><b>Description :</b> ' . $description . '</p>';
+    echo '</div>';
+  }
+echo '</div>';?>
+<br><br>
+
 </body>
 
 </html>

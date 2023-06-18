@@ -23,11 +23,16 @@ include "../html/header.php";
     $result = $bdd->query($query);
 
     // Affiche les informations détaillées
+    echo '<div class="info-div">';
     $row = $result->fetch();
-    echo '<b>' . $row['NOM'] . '</b><br>';
-    echo 'Description : ' . $row['DESCR'] . '<br>';
-    echo '<a href=' . $row['SOURC'] .'>Télécharger</a>';
-    // Ajoutez d'autres champs à afficher selon votre structure de base de données
+    echo '<b>Nom :</b> ' . $row['NOM'] . '<br><br>';
+    echo '<b>Date : </b>' . $row['DAT'] . '<br><br>';
+    echo '<b>Secteur : </b>' . $row['SECTEUR'] . '<br><br>';
+    echo '<b>Cible : </b>' . $row['CIBLE'] . '<br><br>';
+    echo '<b>Prix : </b>' . $row['PRIX'] . '<br><br>';
+    echo '<b>Description : </b>' . $row['DESCR'] . '<br><br>';
+    echo '<a href=' . $row['SOURC'] .'><b>Télécharger</b></a>';
+    echo '</div>';
     ?></div>
 </body>
 </html>

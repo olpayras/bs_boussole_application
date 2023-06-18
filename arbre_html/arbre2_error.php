@@ -15,7 +15,7 @@ include "../html/header.php";
 		<h2 class="center">Intranet de la Fondation Bon Sauveur D'Alby</h2>
 	</div>
     <div class="container_arbre1">
-        <h2 id="title">Oups... Aucun résultats trouvé </h2>
+        <h2 id="title">Oups... Aucun résultat trouvé </h2>
         <button onclick="window.location.href='arbre1.php'" class="next-btn">Try Again</button>
         <button onclick="window.location.href='../html/index.php'" class="next-btn">Home</button>
       </div>

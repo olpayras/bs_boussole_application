@@ -64,7 +64,7 @@ nav ul li a {
 }
 
 nav ul li:hover > a {
-  background-color: #f2f2f2;
+  background-color: #32627c;
 }
 
 nav ul li.dropdown:hover > .dropdown-menu {
@@ -103,12 +103,12 @@ nav ul li.dropdown:hover > .dropdown-menu {
   display: block;
   padding: 10px;
   text-decoration: none;
-  color: #fff;
+  color: #32627c;
 
 }
 
 .dropdown-menu li:hover > a {
-  background-color: #f2f2f2;
+  background-color: #32627c;
 }
 
 
@@ -206,7 +206,55 @@ label {
 
 .cont2 > div {
   padding: 30px;
-  border: 3px solid #3810eb;
+  border: 3px solid #558BA3;
   text-align: center;
   margin-right: 20px;
+  border-radius: 10px; /* Ajout : arrondir les angles */
+  background-color: #f2f2f2; /* Ajout : couleur de fond */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ajout : ombre légère */
+}
+
+.cont2 > div a {
+  text-decoration: none; /* Ajout : supprimer soulignement des liens */
+  color: #558BA3; /* Ajout : couleur du lien */
+}
+
+.cont2 > div p {
+  margin-top: 10px; /* Ajout : espacement entre le titre et la description */
+}
+
+.info-div {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.info-div b {
+  font-weight: bold;
+}
+
+.info-div p {
+  margin: 10px 0;
+}
+
+.info-div a {
+  text-decoration: none;
+  color: #558BA3;
+}
+
+.container3 {
+  margin-left : 360px;
+  padding: 15px;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  display: inline-block;
+  float: left; /* Ajout : flotter à gauche */
+}
+
+.container3 img {
+  display: block;
+  margin: 0 auto; /* Ajout : centrer l'image horizontalement */
 }
