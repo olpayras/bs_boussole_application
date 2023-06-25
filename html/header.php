@@ -17,7 +17,6 @@
             <input type="search" name="nom" class="recherche" placeholder="Recherche Application">
             <input type="submit" value="Rechercher">
         </form>
-    </br>
         <nav class="nav">
             <ul>
                 <li class="dropdown">
@@ -50,6 +49,19 @@
             </ul>
         </nav>
     </div>
+</div>
+<div class="connexion" style="text-align: right; margin-top: 10px;">
+    <p>
+    <?php
+    session_start();
+
+    if (isset($_SESSION['utilisateur'])) {
+        echo "Vous êtes connecté";
+        echo '<a href="../functions/ajouter.php"><p>Ajouter Application</a>';
+    } else {
+        echo '<a href="../logs/connexion.php">Connexion</a>';
+    }
+    ?>
 </div>
 </body>
 </html>
