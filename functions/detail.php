@@ -4,7 +4,7 @@ include "../html/header.php";
 // Function to delete the application from the database
 function deleteApplication($id)
 {
-    $bdd = new PDO('mysql:host=localhost;dbname=BONSAUVEUR', 'root', 'root');
+    $bdd = new PDO('mysql:host=localhost;dbname=BONSAUVEUR', 'root', '');
     $query = "DELETE FROM OUTILS WHERE APPID = $id";
     $bdd->exec($query);
 }
@@ -27,7 +27,7 @@ function deleteApplication($id)
         $id = $_GET['id']; // Récupère l'identifiant de l'outil envoyé dans la requête GET
 
         // Effectue la requête SQL pour récupérer les informations détaillées de l'outil
-        $bdd = new PDO('mysql:host=localhost;dbname=BONSAUVEUR', 'root', 'root');
+        $bdd = new PDO('mysql:host=localhost;dbname=BONSAUVEUR', 'root', '');
         $query = "SELECT * FROM OUTILS WHERE APPID = $id";
         $result = $bdd->query($query);
 

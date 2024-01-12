@@ -8,6 +8,19 @@ USE BONSAUVEUR;
 
 DROP TABLE IF exists OUTILS;
 
+DROP TABLE IF exists UTILISATEURS;
+
+CREATE table UTILISATEURS (
+	ID int NOT NULL auto_increment,
+	nom varchar(1000),
+    email varchar(1000),
+    mot_de_passe varchar(1000),
+    primary key(ID)
+);
+
+INSERT INTO UTILISATEURS(nom, email, mot_de_passe) VALUES
+	('Marc','marc.bonsauveur@gmail.com', '123456');
+
 CREATE table OUTILS (
 	APPID int NOT NULL auto_increment,
 	NOM varchar(1000), 
@@ -26,7 +39,6 @@ CREATE table OUTILS (
 );
 
 INSERT INTO OUTILS(NOM, OFFRESOIN, SECTEUR, CIBLE, NBCIBLE, DESCR, PRIX, DAT, OS, SECUR, SOURC, CATEG) VALUES
-	(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Périnatalité'),
     ('Léa & Léo App','Lien Parent-Enfant','Médico-social ','Patient',99,'Léa et Léo est une application réservée aux parents des enfants accueillis en crèches, écoles maternelles, centres de loisirs, périscolaire, séjours découvertes, séjours de vacances, colonies de vacances… ','Gratuite',2022,'Android','Aucune donnée partagée avec des tiers, mais cette appli peut recueillir vos  Informations personnelles, Photos et vidéos, les données sont chiffrées lors de leur transfert et vous pouvez demander la suppression des données','https://play.google.com/store/apps/details?id=com.leaetleo.com&hl=fr&gl=US','Enfants'),
     ('Respire','Cohérence cardiaque','Médico-social ','Patient',99,'Respire vous aidera à diminuer votre niveau de stress quotidien en effectuant simplement quelques séances de respiration en pleine conscience. Il suffit de se laisser guider par les mouvements de la forme.','Gratuite',2022,'IOS','Aucune données n est collectées','https://apps.apple.com/us/app/respire/id1453325751','Enfants'),
     ('Relax de BerthX','Cohérence cardiaque','Médico-social ','Patient',99,'Inspirez, puis... Expirez ! Rapide, simple et efficace. Utilisez votre respiration pour vous détendre tout en vous faisant guider par des experts de la méditation. Cette application vous permettra de vous détendre en 5 minutes grâce à de simples exercices de respiration.','Gratuite',2020,'IOS','ND','https://apps.apple.com/fr/app/relax-meditation-respiration/id1492874658','Enfants'),
@@ -49,7 +61,6 @@ INSERT INTO OUTILS(NOM, OFFRESOIN, SECTEUR, CIBLE, NBCIBLE, DESCR, PRIX, DAT, OS
 	('Yoga | Down Dog','Excercice Yoga','Médico-social ','Patient',1,'Avec Down Dog, obtenez une séance de yoga différente, à chaque fois que vous vous installez sur votre tapis. Contrairement à des vidéos préenregistrées qui s enchaînent, Down Dog ne vous fera pas répéter le même entraînement encore et encore. Avec plus de 60 000 configurations différentes, Down Dog vous donne le pouvoir de créer une pratique de yoga sur mesure !','Achats Intégrés',2022,'Android','Aucune donnée partagée avec des tiers, mais cette appli peut recueillir vos Informations personnelles, Activité dans l application, les données sont chiffrées lors de leur transfert et vous pouvez demander la suppression des données','https://play.google.com/store/apps/details?id=com.downdogapp&hl=fr&gl=US','Adultes'),
 	('Motivation - Phrases du jour','Motivation','Médico-social ','Patient',1,'Que vous traversiez des moments difficiles, que vous ayez besoin d’un coup de pouce pour parvenir à effectuer vos tâches quotidiennes ou que vous aimiez partager des citations inspirantes sur les réseaux sociaux, Motivation est fait pour vous. Les rappels positifs sont l’un des outils les plus simples et les plus efficaces pour la croissance mentale. Ils vous aident à garder des pensées positives à l’esprit dès le début de la journée, afin de pouvoir y recourir facilement les jours difficiles où vous en avez le plus besoin.','Achats Intégrés',2022,'Android & IOS','Aucune donnée partagée avec des tiers, mais cette appli peut recueillir vos Informations personnelles, Activité dans l application, les données sont chiffrées lors de leur transfert et vous pouvez demander la suppression des données','https://play.google.com/store/apps/details?id=com.hrd.motivation&hl=fr&gl=US','Adultes'),
 	('Daylio Journal','Bien être','Médico-social ','Patient',1,'Daylio vous permet de tenir un journal privé sans avoir à taper une seule ligne. Essayez dès maintenant GRATUITEMENT cette application de micro-journal magnifiquement conçue et incroyablement simple !','Achats Intégrés',2022,'Android & IOS','Aucune donnée partagée avec des tiers, mais cette appli peut recueillir vos Informations personnelles, Activité dans l application, les données sont chiffrées lors de leur transfert et vous pouvez demander la suppression des données','https://play.google.com/store/apps/details?id=net.daylio&hl=fr&gl=US','Adultes'),
-	(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'Personnes Agées'),
 	('Semio8G','Votre guide pour un entretien clinique précis et détaillé','Sanitaire','Praticien',1,'Semio8G peut se définir comme une application web multi supports capable d’accompagner le clinicien et les équipes dans leurs praxis cliniques. En s’appuyant sur les références majeures de la sémiologie psychiatrique, elle offre à l’utilisateur la possibilité de monter en compétence dans sa capacité à observer, organiser, synthétiser, structurer et transmettre sa vision clinique. Semio8G possède en plus une fonction pédagogique et peut aider l’utilisateur à intégrer progressivement son contenu. L’objectif final de Semio8G consiste à améliorer les prises en soin des personnes en souffrance psychique par la montée en compétence des équipes et du professionnel dans le registre de la clinique.','Gratuit',2022,'WEB','ND','https://semio8g.grieps.fr/','Psycho-Oncologie')
 ;
 

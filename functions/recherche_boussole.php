@@ -18,7 +18,7 @@ include "../html/header.php";
         $user_type = $_GET['user_type'];
         $domain = $_GET['domain'];
         $sick_type = $_GET['sick_type'];
-        $bdd = new PDO('mysql:host=localhost;dbname=BONSAUVEUR', 'root', 'root');
+        $bdd = new PDO('mysql:host=localhost;dbname=BONSAUVEUR', 'root', '');
 
         $query = "SELECT * FROM OUTILS WHERE CIBLE LIKE
         '$user_type' AND SECTEUR LIKE '$domain' AND SERVICE LIKE '$sick_type'";

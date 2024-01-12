@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Se connecter à la base de données
     $servername = "localhost";  // Remplacez par votre nom de serveur
     $username = "root"; // Remplacez par votre nom d'utilisateur MySQL
-    $password = "root"; // Remplacez par votre mot de passe MySQL
+    $password = ""; // Remplacez par votre mot de passe MySQL
     $dbname = "BONSAUVEUR"; // Remplacez par le nom de votre base de données
 
     // Créer une connexion

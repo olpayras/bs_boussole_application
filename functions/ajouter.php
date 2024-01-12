@@ -4,9 +4,9 @@ include "../html/header.php";
 // Function to add a new application to the database
 function addApplication($data)
 {
-    $bdd = new PDO('mysql:host=localhost;dbname=BONSAUVEUR', 'root', 'root');
-    $query = "INSERT INTO OUTILS (NOM, OFFRESOIN, SECTEUR, CIBLE, NBCIBLE, DESCR, PRIX, DAT, OS, SECUR, SOURC, CATEG, SERVICE)
-              VALUES (:nom, :offreSoin, :secteur, :cible, :nbCible, :descr, :prix, :dat, :os, :secur, :sourc, :categ, :service)";
+    $bdd = new PDO('mysql:host=localhost;dbname=BONSAUVEUR', 'root', '');
+    $query = "INSERT INTO OUTILS (NOM, OFFRESOIN, SECTEUR, CIBLE, NBCIBLE, DESCR, PRIX, DAT, OS, SECUR, SOURC, CATEG)
+              VALUES (:nom, :offreSoin, :secteur, :cible, :nbCible, :descr, :prix, :dat, :os, :secur, :sourc, :categ)";
     $stmt = $bdd->prepare($query);
     $stmt->execute($data);
 }
@@ -26,7 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'secur' => $_POST['secur'],
         'sourc' => $_POST['sourc'],
         'categ' => $_POST['categ'],
-        'service' => $_POST['service']
     );
 
     // Add the application to the database
@@ -104,14 +103,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         <option value="Personnes Agées">Personnes Agées</option>
         <option value="Psycho-Oncologie">Psycho-Oncologie</option>
     </select><br><br>
-
-    <label for="service">Service :</label>
-    <select id="service" name="service" required>
-        <option value="Psychiatrie">Psychiatrie</option>
-        <option value="Autisme">Autisme</option>
-        <option value="Addiction">Addiction</option>
-        <option value="Handicap">Handicap</option>
-</select><br><br>
 
     <input type="submit" value="Ajouter">
 </form>
