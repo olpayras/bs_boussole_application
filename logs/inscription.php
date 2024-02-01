@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     // Préparer et exécuter la requête d'insertion
-    $stmt = $conn->prepare("INSERT INTO utilisateurs (nom, email, mot_de_passe) VALUES (?, ?, ?)");
+    $stmt = $conn->prepare("INSERT INTO UTILISATEURS (nom, email, mot_de_passe) VALUES (?, ?, ?)");
     $stmt->bind_param("sss", $nom, $email, $mot_de_passe);
     $stmt->execute();
 
