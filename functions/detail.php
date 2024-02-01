@@ -38,10 +38,10 @@ function deleteApplication($id)
         echo '<b>Date : </b>' . $row['DAT'] . '<br><br>';
         echo '<b>Secteur : </b>' . $row['SECTEUR'] . '<br><br>';
 		
-		// Ajout Service à l'affichage détaillé
-		echo '<b>Service : </b>' . $row['SERVICE'] . '<br><br>';
+	// Ajout Service à l'affichage détaillé
+	echo '<b>Service : </b>' . $row['SERVICE'] . '<br><br>';
 		
-		        echo '<b>Cible : </b>' . $row['CIBLE'] . '<br><br>';
+	echo '<b>Cible : </b>' . $row['CIBLE'] . '<br><br>';
         echo '<b>Prix : </b>' . $row['PRIX'] . '<br><br>';
         echo '<b>Description : </b>' . $row['DESCR'] . '<br><br>';
         echo '<a href="' . $row['SOURC'] . '"><b>Télécharger</b></a><p>';
