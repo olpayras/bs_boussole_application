@@ -46,11 +46,13 @@ function deleteApplication($id)
         echo '<b>Description : </b>' . $row['DESCR'] . '<br><br>';
         echo '<a href="' . $row['SOURC'] . '"><b>Télécharger</b></a><p>';
 
-        // Add delete button
-        echo '<form method="post" action="">';
-        echo '<input type="hidden" name="appId" value="' . $id . '">';
-        echo '<input type="submit" name="deleteBtn" value="Supprimer">';
-        echo '</form>';
+        // Add delete button only if a user is connected
+	if (isset($_SESSION['utilisateur'])) {
+        	echo '<form method="post" action="">';
+        	echo '<input type="hidden" name="appId" value="' . $id . '">';
+        	echo '<input type="submit" name="deleteBtn" value="Supprimer">';
+        	echo '</form>';
+	}
 
         echo '</div>';
 
