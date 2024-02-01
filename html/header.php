@@ -30,6 +30,23 @@
                 </li>
             </ul>
         </nav>
+		<nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Services &#9662;</a>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-compo"><a style="color: white"
+                         href="../functions/souspage_service.php?service=Psychiatrie">Psychiatrie</a></li>
+                        <li class="dropdown-compo"><a style="color: white"
+                        href="../functions/souspage_service.php?service=Handicap">Handicap</a></li>
+						<li class="dropdown-compo"><a style="color: white"
+                         href="../functions/souspage_service.php?service=Addiction">Addiction</a></li>
+                        <li class="dropdown-compo"><a style="color: white"
+                        href="../functions/souspage_service.php?service=Autisme">Autisme</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </div>
 </div>
 <div class="connexion" style="text-align: right; margin-top: 10px;">
