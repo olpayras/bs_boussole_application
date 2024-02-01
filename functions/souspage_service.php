@@ -14,7 +14,12 @@ include "../html/header.php";
         <h2 class="center">Intranet de la Fondation Bon Sauveur D'Alby</h2>
     </div>
     <div class="cont"><?php
-include "../html/header.php";
+
+
+// Commentaire pour corriger session start 2 fois car déjà dans le include ci-dessus
+// include "../html/header.php";
+
+
 $service = $_GET['service']; // Récupère la valeur du paramètre "service" envoyé dans la requête GET
 
 // Effectue la connexion à la base de données (vous devez configurer les paramètres de connexion appropriés)
