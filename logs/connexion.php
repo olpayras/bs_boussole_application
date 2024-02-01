@@ -46,7 +46,7 @@ include "../html/header.php"
             }
         
             // Préparer et exécuter la requête de sélection
-            $stmt = $conn->prepare("SELECT * FROM utilisateurs WHERE email = ? AND mot_de_passe = ?");
+            $stmt = $conn->prepare("SELECT * FROM UTILISATEURS WHERE email = ? AND mot_de_passe = ?");
             $stmt->bind_param("ss", $email, $mot_de_passe); // Lier deux chaînes de caractères (string)
             $stmt->execute();
         
