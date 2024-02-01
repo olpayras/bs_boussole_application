@@ -14,7 +14,9 @@ include "../html/header.php";
         <h2 class="center">Intranet de la Fondation Bon Sauveur D'Alby</h2>
     </div>
     <div class="cont"><?php
-include "../html/header.php";
+
+// Correction ci-dessous, include déjà passé plus haut
+//include "../html/header.php";
 $secteur = $_GET['categ']; // Récupère la valeur du paramètre "secteur" envoyé dans la requête GET
 
 // Effectue la connexion à la base de données (vous devez configurer les paramètres de connexion appropriés)
